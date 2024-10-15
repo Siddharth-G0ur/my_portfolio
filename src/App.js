@@ -35,12 +35,15 @@ const App = () => {
       <div className="name-overlay" style={{ opacity: isFullPage ? 0 : 1 }}>
         <h1>Siddharth Singh Gour</h1>
         <h2>
+          
+
         <TypeAnimation
   sequence={['Data Analyst', 1500, 'Product Analyst', 1500, 'Business Analyst', 1500]}
   style={{ fontSize: '1em' }}
   repeat={Infinity}
   speed={65}
 />
+  
           
           </h2>
         <div className="intro">
@@ -50,9 +53,9 @@ const App = () => {
             and help them make better decisions.
           </p>
         </div>
-        <div className="contact-info">
-          <p>goursiddharth01@gmail.com | +91 93408 83094</p>
-          <p><div >
+        <div className="contact-info ">
+          
+          <p><div className='contact-grid' >
             <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
             <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
           </div>
