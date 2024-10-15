@@ -1,7 +1,10 @@
 import React from 'react';
 import { SiMicrosoftexcel, SiGoogleanalytics, SiLooker, SiStreamlit, SiGooglebigquery, SiPython, SiPandas } from 'react-icons/si';
 import { FaDatabase, FaChartBar, FaCode } from 'react-icons/fa';
-import { BsGraphUp, BsBarChartLine } from 'react-icons/bs';
+import { HiUserGroup } from "react-icons/hi";
+import { IoIosStats } from "react-icons/io";
+import { PiChartScatterBold, PiNetworkX } from "react-icons/pi";
+import { MdOutlineCategory, MdOutlineScience } from "react-icons/md";
 
 const skillIcons = {
   'Microsoft Excel': SiMicrosoftexcel,
@@ -9,18 +12,18 @@ const skillIcons = {
   'Looker': SiLooker,
   'Streamlit': SiStreamlit,
   'BigQuery': SiGooglebigquery,
-  'Beautiful Soup': FaCode,
   'Pandas': SiPandas,
   'Python': SiPython,
   'SQL': FaDatabase,
-  'Statistical analysis': BsGraphUp,
-  'Data visualization': FaChartBar,
-  'A/B Testing': BsBarChartLine,
-  'Cohort Analysis': BsGraphUp,
+  'Cohort Analysis': HiUserGroup,
+  'Statistical analysis': IoIosStats,
+  'Data visualization': PiChartScatterBold,
+  'A/B Testing': PiNetworkX,
   'EDA': FaChartBar,
   'Analytical Thinking': FaCode,
-  'Hypothesis Testing': BsGraphUp,
-  'Customer Segmentation Analysis': BsBarChartLine
+  'Hypothesis Testing': MdOutlineScience,
+  'Customer Segmentation Analysis': MdOutlineCategory
+
 };
 
 const SkillItem = ({ skill }) => {
@@ -39,7 +42,7 @@ const SkillsCard = () => (
     <div className="skills-section">
       <h4>Tools:</h4>
       <div className="skills-grid">
-        {['Microsoft Excel', 'Google Analytics', 'Looker', 'Streamlit', 'BigQuery', 'Beautiful Soup', 'Pandas', 'Matplotlib', 'Python', 'SQL'].map(skill => (
+        {['Python', 'SQL','Microsoft Excel', 'Google Analytics', 'Looker', 'Streamlit', 'BigQuery', 'Pandas'].map(skill => (
           <SkillItem key={skill} skill={skill} />
         ))}
       </div>
@@ -47,7 +50,7 @@ const SkillsCard = () => (
     <div className="skills-section">
       <h4>Techniques:</h4>
       <div className="skills-grid">
-        {['Statistical analysis', 'Data visualization', 'A/B Testing', 'Cohort Analysis', 'EDA', 'Analytical Thinking', 'Hypothesis Testing', 'Customer Segmentation Analysis'].map(skill => (
+        {[ 'Data visualization', 'A/B Testing', 'Cohort Analysis', 'EDA', 'Hypothesis Testing', 'Customer Segmentation Analysis'].map(skill => (
           <SkillItem key={skill} skill={skill} />
         ))}
       </div>

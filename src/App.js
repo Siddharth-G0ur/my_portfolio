@@ -66,7 +66,6 @@ const App = () => {
         <div className="content-scroll-area">
           <div id="experience"><ExperienceCard /></div>
           <div id="skills"><SkillsCard /></div>
-         
           <div id="projects"><ProjectsCard /></div>
         </div>
       </div>

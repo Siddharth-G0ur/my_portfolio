@@ -266,3 +266,27 @@ nav li:hover {
 
   text-shadow: 0 0 5px rgb(234, 236, 239);
 }
+
+
+.modal-form input,
+.modal-form textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-form button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-form button:hover {
+  background-color: #444;
+}
