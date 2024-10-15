@@ -3,7 +3,6 @@ import ParticleEffect from './ParticleEffect';
 import Navbar from './Navbar';
 import ExperienceCard from './ExperienceCard';
 import SkillsCard from './SkillsCard';
-import EducationCard from './EducationCard';
 import ProjectsCard from './ProjectsCard';
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
@@ -67,7 +66,7 @@ const App = () => {
         <div className="content-scroll-area">
           <div id="experience"><ExperienceCard /></div>
           <div id="skills"><SkillsCard /></div>
-          <div id="education"><EducationCard /></div>
+         
           <div id="projects"><ProjectsCard /></div>
         </div>
       </div>

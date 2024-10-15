@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiMicrosoftexcel, SiGoogleanalytics, SiLooker, SiStreamlit, SiGooglebigquery, SiPython, SiPandas, SiMatplotlib } from 'react-icons/si';
+import { SiMicrosoftexcel, SiGoogleanalytics, SiLooker, SiStreamlit, SiGooglebigquery, SiPython, SiPandas } from 'react-icons/si';
 import { FaDatabase, FaChartBar, FaCode } from 'react-icons/fa';
 import { BsGraphUp, BsBarChartLine } from 'react-icons/bs';
 
@@ -11,7 +11,6 @@ const skillIcons = {
   'BigQuery': SiGooglebigquery,
   'Beautiful Soup': FaCode,
   'Pandas': SiPandas,
-  // 'Matplotlib': SiMatplotlib,
   'Python': SiPython,
   'SQL': FaDatabase,
   'Statistical analysis': BsGraphUp,
