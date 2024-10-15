@@ -4,21 +4,31 @@ body, html {
   height: 100%;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
+  scroll-padding-top: 80px; /* Add this line */
 }
+
+a { color: inherit;
+  text-decoration: none;
+ } 
 
 .App {
   min-height: 150vh;
   position: relative;
 }
 
+/* Navbar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  height: 60px; /* Set a fixed height for the navbar */
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  display: flex;
+  align-items: center; /* This centers the content vertically */
 }
 
 nav ul {
@@ -27,6 +37,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 1rem 2rem;
+  width: 100%;
 }
 
 nav li {
@@ -35,6 +46,7 @@ nav li {
   font-weight: bold;
   margin-left: 2rem;
   position: relative;
+  transition: color 0.25s ease-in-out;
 }
 
 nav li::after {
@@ -46,13 +58,19 @@ nav li::after {
   height: 2px;
   background-color: #333;
   transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 }
 
 nav li:hover::after {
   transform: scaleX(1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White light glow effect */
 }
 
+nav li:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255); /* Light glow on text */
+}
+
+/* Particle Container */
 .particle-container {
   position: fixed;
   top: 0;
@@ -63,6 +81,7 @@ nav li:hover::after {
   transition: opacity 0.3s ease-out;
 }
 
+/* Name Overlay */
 .name-overlay {
   position: fixed;
   top: 150px;
@@ -71,6 +90,7 @@ nav li:hover::after {
   transition: opacity 0.3s ease-out;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 600px; /* Limit the width for better readability */
 }
 
 .name-overlay h1 {
@@ -85,8 +105,16 @@ nav li:hover::after {
   margin: 0.5rem 0;
 }
 
+.intro {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .contact-info {
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .contact-info a {
@@ -98,6 +126,7 @@ nav li:hover::after {
   text-decoration: underline;
 }
 
+/* Content Section */
 .content-section {
   position: absolute;
   top: 50vh;
@@ -129,6 +158,7 @@ nav li:hover::after {
   gap: 2rem;
 }
 
+/* Card Style */
 .card {
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -160,4 +190,31 @@ nav li:hover::after {
 
 .spacer {
   height: 50vh;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.experience-item, .education-item, .project-item, .skills-section {
+  margin-bottom: 1.5rem;
+}
+
+.content-scroll-area > div {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.card h4 {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  margin-top: 0.5rem;
+}
+
+.content-scroll-area {
+  display: flex;
+  flex-direction: column;
 }

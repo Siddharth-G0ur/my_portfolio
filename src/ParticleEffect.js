@@ -17,7 +17,7 @@ const ParticleEffect = () => {
     background: {
       color: { value: "#000000" },
     },
-    fpsLimit: 120,
+    fpsLimit: 30,
     interactivity: {
       events: {
         onClick: { enable: true, mode: "push" },
