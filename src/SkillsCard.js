@@ -5,6 +5,7 @@ import { HiUserGroup } from "react-icons/hi";
 import { IoIosStats } from "react-icons/io";
 import { PiChartScatterBold, PiNetworkX } from "react-icons/pi";
 import { MdOutlineCategory, MdOutlineScience } from "react-icons/md";
+import { IoLogoTableau } from "react-icons/io5";
 
 const skillIcons = {
   'Microsoft Excel': SiMicrosoftexcel,
@@ -22,8 +23,8 @@ const skillIcons = {
   'EDA': FaChartBar,
   'Analytical Thinking': FaCode,
   'Hypothesis Testing': MdOutlineScience,
-  'Customer Segmentation Analysis': MdOutlineCategory
-
+  'Customer Segmentation Analysis': MdOutlineCategory,
+  'Tableau': IoLogoTableau
 };
 
 const SkillItem = ({ skill }) => {
@@ -37,12 +38,12 @@ const SkillItem = ({ skill }) => {
 };
 
 const SkillsCard = () => (
-  <div className="card" id="skills">
+  <div className="card inverted" id="skills">
     <h3>Skills</h3>
     <div className="skills-section">
       <h4>Tools:</h4>
       <div className="skills-grid">
-        {['Python', 'SQL','Microsoft Excel', 'Google Analytics', 'Looker', 'Streamlit', 'BigQuery', 'Pandas'].map(skill => (
+        {['Python', 'SQL', 'Microsoft Excel', 'Google Analytics', 'Looker', 'Tableau', 'Streamlit', 'BigQuery', 'Pandas'].map(skill => (
           <SkillItem key={skill} skill={skill} />
         ))}
       </div>
@@ -50,7 +51,7 @@ const SkillsCard = () => (
     <div className="skills-section">
       <h4>Techniques:</h4>
       <div className="skills-grid">
-        {[ 'Data visualization', 'A/B Testing', 'Cohort Analysis', 'EDA', 'Hypothesis Testing', 'Customer Segmentation Analysis'].map(skill => (
+        {['Data visualization', 'A/B Testing', 'Cohort Analysis', 'EDA', 'Hypothesis Testing', 'Customer Segmentation Analysis'].map(skill => (
           <SkillItem key={skill} skill={skill} />
         ))}
       </div>

@@ -55,7 +55,7 @@ const App = () => {
         <div className="contact-info ">
           
           <p><div className='contact-grid' >
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/siddharth-singh-gour" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
             <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
           </div>
           </p>

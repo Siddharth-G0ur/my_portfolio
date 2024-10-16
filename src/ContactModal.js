@@ -64,8 +64,8 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
         </button>
         <h3>Contact Me</h3>
         <div >
-          <p>Email: goursiddharth@gmail.com</p>
-          <p>Phone: +91 9340883094</p>
+          <p>Email:<b> goursiddharth@gmail.com</b> </p>
+          <p>Phone: <b>+91 9340883094</b></p>
         </div>
         <form onSubmit={handleSubmit}>
           <input

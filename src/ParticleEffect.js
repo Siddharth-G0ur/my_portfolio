@@ -49,7 +49,7 @@ const ParticleEffect = () => {
       },
       number: {
         density: { enable: true },
-        value: 200,
+        value: 20,
       },
       opacity: { value: 1 },
       shape: { type: "circle" },

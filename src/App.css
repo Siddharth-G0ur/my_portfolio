@@ -226,7 +226,22 @@ nav li:hover {
   font-size: 1.5rem;
 }
 
+/* Inverted Card Style */
+.card.inverted {
+  background-color: #333333;
+  color: white;
+}
 
+.card.inverted h3 {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+
+.card.inverted h4 {
+  color: #f0f0f0;
+}
+
+/* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -234,38 +249,58 @@ nav li:hover {
   margin-top: 15px;
 }
 
+/* Skill Item */
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   transition: all 0.3s ease;
-}
-
-.skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
-  transition: all 0.3s ease;
-}
-
-.skill-name {
-  font-size: 0.8rem;
-  color: #333;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .skill-item:hover {
   transform: translateY(-5px);
+  background-color: rgba(66, 63, 63, 0.1);
+}
+
+/* Icon Styling */
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
 }
 
 .skill-item:hover .skill-icon {
-  
-  filter: drop-shadow(0 0 8px rgb(244, 245, 246));
+  color: #ffffff;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 0.8rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .skill-item:hover .skill-name {
-
-  text-shadow: 0 0 5px rgb(234, 236, 239);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
+/* Section Headers */
+.skills-section {
+  margin-bottom: 2rem;
+}
+
+.skills-section h4 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 
 
 .modal-form input,
@@ -289,4 +324,140 @@ nav li:hover {
 
 .modal-form button:hover {
   background-color: #444;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #333;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.experience-icon {
+  position: absolute;
+  left: -44px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-content {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience-content h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.experience-date {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience-achievements {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-achievements li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.experience-achievements li svg {
+  min-width: 16px;
+  margin-right: 8px;
+  margin-top: 4px;
+  color: #333;
+}
+
+.experience-achievements li span {
+  flex: 1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  height: 250px; /* Increased height for larger images */
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem; /* Added padding to the content */
+}
+
+.tech-buttons {
+  margin-top: auto;
+}
+
+.tech-button {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  color: #333333;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-button:hover {
+  background-color: #666666;
+  color: white;
+  box-shadow: 0 0 10px rgba(72, 126, 207, 0.5);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
